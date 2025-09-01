@@ -13,7 +13,7 @@
             <nav>
                 <ul>
                     <li><a href="">login</a></li>
-                    <li><a href="">signup</a></li>
+                    <li><a href="register.php">sign up</a></li>
                     <li><a href="">dashboard</a></li>
                 </ul>
             </nav>
