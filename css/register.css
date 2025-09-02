@@ -9,7 +9,16 @@ body {
     padding: 20px;
     color: #ffffff;
 }
-
+.register p.name {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: blueviolet;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    margin-top: -10px;
+}
 .shoplink {
     position: fixed;
     top: 20px;
@@ -22,7 +31,10 @@ body {
     font-weight: 500;
     transition: background 0.3s, transform 0.2s;
 }
-
+.shoplink:hover {
+    background: #2d87b4;
+    transform: scale(1.05);
+}
 
 .register {
     background: rgba(255, 255, 255, 0.95);
@@ -33,6 +45,7 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     color: #1f2937;
 }
+
 
 .register form {
     display: flex;
@@ -62,20 +75,20 @@ body {
     min-height: 90px;
 }
 
-.register .button {
-    background: #3b82f6;
-    color: #fff;
-    border: none;
-    padding: 12px;
-    border-radius: 10px;
-    font-size: 16px;
+.register input[type="submit"] {
+    background: linear-gradient(90deg, #6366f1 0%, #a78bfa 100%);
+    color: white;
+    padding: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 500;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
+    transition: all 0.3s ease;
 }
 
-.register .button:hover {
-    background: #1d4ed8;
+.register input[type="submit"]:hover {
+    background: linear-gradient(90deg, #4f46e5 0%, #8b5cf6 100%);
     transform: scale(1.02);
 }
 

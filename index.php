@@ -12,9 +12,9 @@
             <a href="index.php"><img src="" alt=""></a>
             <nav>
                 <ul>
-                    <li><a href="">login</a></li>
-                    <li><a href="register.php">sign up</a></li>
-                    <li><a href="">dashboard</a></li>
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="register.php">Sign Up</a></li>
+                    <li><a href="">Dashboard</a></li>
                 </ul>
             </nav>
        </header>

@@ -36,13 +36,14 @@ if(isset($_POST['submit'])){
             <div class="success"><?php echo $success; ?></div>
         <?php endif; ?>
         <form action="register.php" method="post">
+            <p class="name">Sign Up</p>
             <input type="text" name="name" placeholder="Enter your name here" required>
             <input type="email" name="email" placeholder="Enter your email here" required>
             <input type="password" name="password" placeholder="Enter your password here" required>
             <input type="text" name="phone" placeholder="Enter your phone here" required>
             <textarea name="address" placeholder="Enter your address here"></textarea>
             <input class="button" type="submit" name="submit" value="Sign up">
-            <a href="login.php">Already have an account? Login</a>
+            <p>Already have an account?<a style="padding-left: 10px; font-size: 17px;" href="login.php">Login</a></p>
         </form>
     </div>
 </body>
