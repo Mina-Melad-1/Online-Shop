@@ -14,6 +14,11 @@
                 $_SESSION['user_id'] = $row['id'];
                 $_SESSION['user_name'] = $row['name'];
                 $_SESSION['user_role'] = $row['role'];
+                if($_SESSION['user_role'] == 'admin') {
+                    header("Location: admin/dashboard.php");
+                } else {
+                    echo "dashboard for user";
+                }
             }
             else
             {
