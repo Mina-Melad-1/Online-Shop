@@ -22,7 +22,7 @@ else{
 <body>
      <div class="dashboard_sidebar">
         <ul>
-            <li><a href="">Add Product</a></li>
+            <li><a href="addproduct.php">Add Product</a></li>
             <li><a href="">View Order</a></li>
             <li><a href="../logout.php">Log out</a></li>
         </ul>
