@@ -1,18 +1,16 @@
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Global styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f7fa;
     color: #333;
 }
 
-/* Sidebar styles */
+
 .dashboard_sidebar {
     position: fixed;
     top: 0;
@@ -48,7 +46,6 @@ body {
     padding-left: 25px;
 }
 
-/* Main content styles */
 .dashboard_main {
     margin-left: 250px;
     padding: 40px;
@@ -56,7 +53,6 @@ body {
     background-color: #b5b3b3;
 }
 
-/* Form styles */
 .dashboard_main h1 {
     font-size: 40px;
     margin-bottom: 30px;
