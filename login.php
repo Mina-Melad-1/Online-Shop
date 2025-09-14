@@ -17,7 +17,8 @@
                 if($_SESSION['user_role'] == 'admin') {
                     header("Location: admin/dashboard.php");
                 } else {
-                    echo "dashboard for user";
+                    header("Location: index.php");
+                    exit();
                 }
             }
             else

@@ -4,7 +4,7 @@ if(isset($_SESSION['user_id'])){
     if($_SESSION['user_role'] == 'admin') {
         
     } else {
-        echo "Access denied. You are not an admin.";
+        header("Location: ../dashboard.php");
     }
 }
 else{
