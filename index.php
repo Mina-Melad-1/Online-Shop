@@ -35,7 +35,15 @@ $result = mysqli_query($conn, $sql);
                 <h2> <?php echo $row['name']; ?></h2>
                 <p><?php echo $row['stock']; ?></p>
                 <p class="productprice">$ <?php echo $row['price']; ?></p>
-                <a href="#">Buy Now</a>
+
+                <?php if(isset($_SESSION['user_id'])){ ?>
+                <a href="singleorder.php?user_id=<?php echo $_SESSION['user_id']; ?>&product_id=<?php echo $row['id']; ?>&product_price=<?php echo $row['price']; ?>">Buy Now</a>
+                <?php } ?>
+
+                <?php if(!isset($_SESSION['user_id'])){ ?>
+                <a href="login.php">Buy Now</a>
+                <?php } ?>
+
             </div>
             <?php } ?>
        </main>
