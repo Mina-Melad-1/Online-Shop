@@ -2,15 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1, h2 { color: #333; }
-        h2 { margin-top: 20px; }
-        ul { list-style-type: none; padding-left: 0; }
-        li { margin-bottom: 10px; }
-        code { background-color: #f4f4f4; padding: 2px 5px; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    
+
+    
 </head>
 <body>
     <h1>Online Shop Project</h1>
