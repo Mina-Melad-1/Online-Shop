@@ -46,7 +46,8 @@ else{
      <div class="dashboard_sidebar">
         <ul>
             <li><a href="addproduct.php">Add Product</a></li>
-            <li><a href="displayproduct.php">View Order</a></li>
+            <li><a href="displayproduct.php">View Prducts</a></li>
+            <li><a href="vieworder.php">View Orders</a></li>
             <li><a href="../logout.php">Log out</a></li>
         </ul>
     </div>

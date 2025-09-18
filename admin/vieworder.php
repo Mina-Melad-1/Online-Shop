@@ -2,7 +2,7 @@
 session_start();
 include '../db.php';
 if(isset($_SESSION['user_id'])){
-    $sql = "select * from products";
+    $sql = "select * from payments";
     $result = mysqli_query($conn, $sql);
     if($_SESSION['user_role'] == 'admin') {
         if(!$result) {
@@ -36,17 +36,13 @@ else{
             <li><a href="../logout.php">Log out</a></li>
         </ul>
     </div>
-    <table>
+     <table>
         <thead>
             <tr>
-                <th>Product Title</th>
-                <th>Product Description</th>
-                <th>Price</th>
-                <th>Stock</th>
-                <th>Image</th>
-                <th>Category Name</th>
-                <th>Action</th>
-                <th>Action</th>
+                <th>Order id</th>
+                <th>User id</th>
+                <th>Total Amount</th>
+                <th>Payment Method</th>
             </tr>
         </thead>
         <tbody>
@@ -54,14 +50,10 @@ else{
 
              ?>
              <tr>
-                <td><?php echo $row['name'] ?> </td>
-                <td><?php echo $row['description'] ?> </td>
-                <td><?php echo $row['price'] ?> </td>
-                <td><?php echo $row['stock'] ?> </td>
-                <td><img src="../image/<?php echo $row['image'] ?>" alt="" width="100px"></td>
-                <td><?php echo $row['category_name'] ?> </td>
-                <td><a class="update" href="updateproduct.php?product_id=<?php echo $row['id'] ?>">Update</a></td>
-                <td><a class="delete" href="deleteproduct.php?product_id=<?php echo $row['id'] ?>">Delete</a></td>
+                <td><?php echo $row['order_id'] ?> </td>
+                <td><?php echo $row['user_id'] ?> </td>
+                <td><?php echo $row['total_amount'] ?> </td>
+                <td><?php echo $row['payment_method'] ?> </td>
             </tr>
             <?php } ?>
         </tbody>

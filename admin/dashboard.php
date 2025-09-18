@@ -16,14 +16,15 @@ else{
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/admin.css">
     <title>Document</title>
 </head>
 <body>
      <div class="dashboard_sidebar">
         <ul>
             <li><a href="addproduct.php">Add Product</a></li>
-            <li><a href="displayproduct.php">View Order</a></li>
+            <li><a href="displayproduct.php">View Products</a></li>
+            <li><a href="vieworder.php">View Orders</a></li>
             <li><a href="../logout.php">Log out</a></li>
         </ul>
     </div>
